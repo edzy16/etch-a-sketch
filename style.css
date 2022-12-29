@@ -17,13 +17,14 @@
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   justify-items: center;
   align-items: center;
-  height: 500px;
-  width: 500px;
-  padding-left: 390px;
+  height: 450px;
+  width: 450px;
+  text-align: center;
+  left: 50%;
+  border: 1px solid black;
 }
 
 .grid-item {
-  border: 1px solid #ddd;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -43,5 +44,28 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  padding-left: 390px;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  font-size: 20px;
+  text-align: center;
+}
+
+#black, #eraser, #reset, #rainbow {
+  border-radius: 5px;
+}
+
+#black{
+ background-color: black;
+ color: white;
+ border: 1px black;
+}
+
+#rainbow{
+  background-color: olive ;
+  border: 1px olivedrab;
+}
+
+#reset{
+  background-color: aqua;
+  border: 1px aquamarine;
 }
